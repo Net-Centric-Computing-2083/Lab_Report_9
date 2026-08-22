@@ -1,0 +1,76 @@
+﻿@model ModelBindingDemo.Models.Employee
+
+@{
+    ViewData["Title"] = "Create Employee";
+}
+
+<h1>Create Employee</h1>
+
+<form asp-controller="Employee"
+      asp-action="Create"
+      method="post">
+
+    <div>
+        <label asp-for="Id"></label>
+        <input asp-for="Id" type="number" />
+        <span asp-validation-for="Id"></span>
+    </div>
+
+    <br />
+
+    <div>
+        <label asp-for="Name"></label>
+        <input asp-for="Name" />
+        <span asp-validation-for="Name"></span>
+    </div>
+
+    <br />
+
+    <div>
+        <label asp-for="Email"></label>
+        <input asp-for="Email" type="email" />
+        <span asp-validation-for="Email"></span>
+    </div>
+
+    <br />
+
+    <div>
+        <label asp-for="Age"></label>
+        <input asp-for="Age" type="number" />
+        <span asp-validation-for="Age"></span>
+    </div>
+
+    <br />
+
+    <div>
+        <label asp-for="ContactNo"></label>
+        <input asp-for="ContactNo" type="text" />
+        <span asp-validation-for="ContactNo"></span>
+    </div>
+
+    <br />
+
+    <div>
+        <label asp-for="Salary"></label>
+        <input asp-for="Salary" type="number" step="0.01" />
+        <span asp-validation-for="Salary"></span>
+    </div>
+
+    <br />
+
+    <div>
+        <label asp-for="JoinedDate"></label>
+        <input asp-for="JoinedDate" type="date" />
+        <span asp-validation-for="JoinedDate"></span>
+    </div>
+
+    <br />
+
+    <button type="submit">Submit</button>
+</form>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
