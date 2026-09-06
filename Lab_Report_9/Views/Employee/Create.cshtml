@@ -1,0 +1,73 @@
+﻿@model LabReport9.Models.Employee
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Employee</title>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Employee Details</h1>
+
+        <form asp-controller="Employee"
+              asp-action="Create"
+              method="post">
+
+            <div asp-validation-summary="All" class="error"></div>
+
+            <div class="form-group">
+                <label asp-for="Id">Employee ID</label>
+                <input asp-for="Id" type="number" />
+                <span asp-validation-for="Id" class="error"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Name">Name</label>
+                <input asp-for="Name" type="text" />
+                <span asp-validation-for="Name" class="error"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Email">Email</label>
+                <input asp-for="Email" type="email" />
+                <span asp-validation-for="Email" class="error"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Age">Age</label>
+                <input asp-for="Age" type="number" />
+                <span asp-validation-for="Age" class="error"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="ContactNo">Contact No</label>
+                <input asp-for="ContactNo" type="text" />
+                <span asp-validation-for="ContactNo" class="error"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Salary">Salary</label>
+                <input asp-for="Salary" type="number" step="0.01" />
+                <span asp-validation-for="Salary" class="error"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="JoinedDate">Joined Date</label>
+                <input asp-for="JoinedDate" type="date" />
+                <span asp-validation-for="JoinedDate" class="error"></span>
+            </div>
+
+            <button type="submit" class="btn">
+                Submit
+            </button>
+
+        </form>
+
+    </div>
+
+</body>
+</html>
