@@ -1,0 +1,72 @@
+﻿@model Lab_Report_9.Models.Employee
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employee Details</title>
+
+    <style>
+            .employee-result {
+                max-width: 650px;
+                margin: 40px auto;
+                padding: 30px;
+            }
+
+                .employee-result h2 {
+                    text-align: center;
+                }
+
+            .success {
+                text-align: center;
+                color: green;
+                font-weight: bold;
+            }
+
+            .details {
+                padding: 15px;
+                border-bottom: 1px solid #ddd;
+            }
+    </style>
+</head>
+
+<body>
+
+    <div class="employee-result">
+        <h2>Submitted Employee Details</h2>
+
+        <p class="success">
+            Employee information submitted successfully!
+        </p>
+
+        <div class="details">
+            <strong>Employee ID:</strong> @Model.Id
+        </div>
+
+        <div class="details">
+            <strong>Name:</strong> @Model.Name
+        </div>
+
+        <div class="details">
+            <strong>Email:</strong> @Model.Email
+        </div>
+
+        <div class="details">
+            <strong>Age:</strong> @Model.Age
+        </div>
+
+        <div class="details">
+            <strong>Contact No:</strong> @Model.ContactNo
+        </div>
+
+        <div class="details">
+            <strong>Salary:</strong> Rs. @Model.Salary
+        </div>
+
+        <div class="details">
+            <strong>Joined Date:</strong>
+            @Model.JoinedDate.ToString("yyyy-MM-dd")
+        </div>
+    </div>
+
+</body>
+</html>

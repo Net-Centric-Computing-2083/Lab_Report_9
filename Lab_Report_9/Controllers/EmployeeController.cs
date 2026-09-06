@@ -1,0 +1,29 @@
+﻿using Lab_Report_9.Models;
+using Microsoft.AspNetCore.Mvc;
+
+namespace Lab_Report_9.Controllers
+{
+    public class EmployeeController : Controller
+    {
+        // GET: Employee/Create
+        [HttpGet]
+        public IActionResult Create()
+        {
+            return View();
+        }
+
+        // POST: Employee/Create
+        [HttpPost]
+        public IActionResult Create(Employee employee)
+        {
+            // Check whether the submitted data is valid
+            if (ModelState.IsValid)
+            {
+                return View("Result", employee);
+            }
+
+            // If validation fails, return to the form
+            return View(employee);
+        }
+    }
+}
