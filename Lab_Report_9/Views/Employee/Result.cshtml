@@ -1,0 +1,94 @@
+﻿@model MyMvcApp.Models.Employee
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employee Details</title>
+
+    <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f2f2f2;
+                margin: 0;
+                padding: 40px;
+            }
+
+            .result-container {
+                width: 550px;
+                margin: auto;
+                background: white;
+                padding: 25px;
+                border-radius: 10px;
+                box-shadow: 0 0 10px gray;
+            }
+
+            h2 {
+                text-align: center;
+            }
+
+            table {
+                width: 100%;
+                border-collapse: collapse;
+            }
+
+            th, td {
+                border: 1px solid #ccc;
+                padding: 12px;
+                text-align: left;
+            }
+
+            th {
+                background-color: #007bff;
+                color: white;
+                width: 40%;
+            }
+    </style>
+</head>
+
+<body>
+
+    <div class="result-container">
+
+        <h2>Submitted Employee Information</h2>
+
+        <table>
+            <tr>
+                <th>Employee ID</th>
+                <td>@Model.Id</td>
+            </tr>
+
+            <tr>
+                <th>Name</th>
+                <td>@Model.Name</td>
+            </tr>
+
+            <tr>
+                <th>Email</th>
+                <td>@Model.Email</td>
+            </tr>
+
+            <tr>
+                <th>Age</th>
+                <td>@Model.Age</td>
+            </tr>
+
+            <tr>
+                <th>Contact No</th>
+                <td>@Model.ContactNo</td>
+            </tr>
+
+            <tr>
+                <th>Salary</th>
+                <td>@Model.Salary</td>
+            </tr>
+
+            <tr>
+                <th>Joined Date</th>
+                <td>@Model.JoinedDate.ToString("yyyy-MM-dd")</td>
+            </tr>
+        </table>
+
+    </div>
+
+</body>
+</html>
