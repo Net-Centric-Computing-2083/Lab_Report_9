@@ -1,0 +1,37 @@
+﻿@model Lab9.Models.Employee
+
+<h1>Employee Registration</h1>
+
+<form asp-action="Create" method="post">
+
+    <label>Id:</label>
+    <input asp-for="Id" />
+    <br /><br />
+
+    <label>Name:</label>
+    <input asp-for="Name" />
+    <br /><br />
+
+    <label>Email:</label>
+    <input asp-for="Email" />
+    <br /><br />
+
+    <label>Age:</label>
+    <input asp-for="Age" />
+    <br /><br />
+
+    <label>Contact No:</label>
+    <input asp-for="ContactNo" />
+    <br /><br />
+
+    <label>Salary:</label>
+    <input asp-for="Salary" />
+    <br /><br />
+
+    <label>Joined Date:</label>
+    <input asp-for="JoinedDate" type="date" />
+    <br /><br />
+
+    <button type="submit">Submit</button>
+
+</form>
