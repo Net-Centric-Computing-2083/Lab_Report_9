@@ -1,0 +1,28 @@
+﻿@model Lab_Report_9.Models.Employee
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employee Details</title>
+</head>
+
+<body>
+
+    <h1>Submitted Employee Information</h1>
+
+    <p><strong>Employee ID:</strong> @Model.Id</p>
+
+    <p><strong>Name:</strong> @Model.Name</p>
+
+    <p><strong>Email:</strong> @Model.Email</p>
+
+    <p><strong>Age:</strong> @Model.Age</p>
+
+    <p><strong>Contact No:</strong> @Model.ContactNo</p>
+
+    <p><strong>Salary:</strong> @Model.Salary</p>
+
+    <p><strong>Joined Date:</strong> @Model.JoinedDate.ToString("yyyy-MM-dd")</p>
+
+</body>
+</html>

@@ -1,0 +1,69 @@
+﻿@model Lab_Report_9.Models.Employee
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Employee</title>
+</head>
+
+<body>
+
+    <h1>Employee Registration</h1>
+
+    <form asp-action="Create" method="post">
+
+        <div>
+            <label asp-for="Id">Employee ID:</label>
+            <input asp-for="Id" />
+        </div>
+
+        <br />
+
+        <div>
+            <label asp-for="Name">Name:</label>
+            <input asp-for="Name" />
+        </div>
+
+        <br />
+
+        <div>
+            <label asp-for="Email">Email:</label>
+            <input asp-for="Email" type="email" />
+        </div>
+
+        <br />
+
+        <div>
+            <label asp-for="Age">Age:</label>
+            <input asp-for="Age" type="number" />
+        </div>
+
+        <br />
+
+        <div>
+            <label asp-for="ContactNo">Contact No:</label>
+            <input asp-for="ContactNo" />
+        </div>
+
+        <br />
+
+        <div>
+            <label asp-for="Salary">Salary:</label>
+            <input asp-for="Salary" type="number" step="0.01" />
+        </div>
+
+        <br />
+
+        <div>
+            <label asp-for="JoinedDate">Joined Date:</label>
+            <input asp-for="JoinedDate" type="date" />
+        </div>
+
+        <br />
+
+        <button type="submit">Submit</button>
+
+    </form>
+
+</body>
+</html>
