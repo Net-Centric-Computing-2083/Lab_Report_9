@@ -4,33 +4,47 @@
 
 <form asp-action="Create" method="post">
 
-    <label asp-for="Id"></label>
-    <input asp-for="Id" />
-    <br /><br />
+    <div>
+        <label asp-for="Id"></label>
+        <input asp-for="Id" />
+    </div>
+    <br />
 
-    <label asp-for="Name"></label>
-    <input asp-for="Name" />
-    <br /><br />
+    <div>
+        <label asp-for="Name"></label>
+        <input asp-for="Name" />
+    </div>
+    <br />
 
-    <label asp-for="Email"></label>
-    <input asp-for="Email" />
-    <br /><br />
+    <div>
+        <label asp-for="Email"></label>
+        <input asp-for="Email" />
+    </div>
+    <br />
 
-    <label asp-for="Age"></label>
-    <input asp-for="Age" />
-    <br /><br />
+    <div>
+        <label asp-for="Age"></label>
+        <input asp-for="Age" type="number" />
+    </div>
+    <br />
 
-    <label asp-for="ContactNo"></label>
-    <input asp-for="ContactNo" />
-    <br /><br />
+    <div>
+        <label asp-for="ContactNo"></label>
+        <input asp-for="ContactNo" />
+    </div>
+    <br />
 
-    <label asp-for="Salary"></label>
-    <input asp-for="Salary" />
-    <br /><br />
+    <div>
+        <label asp-for="Salary"></label>
+        <input asp-for="Salary" type="number" />
+    </div>
+    <br />
 
-    <label asp-for="JoinedDate"></label>
-    <input asp-for="JoinedDate" type="date" />
-    <br /><br />
+    <div>
+        <label asp-for="JoinedDate"></label>
+        <input asp-for="JoinedDate" type="date" />
+    </div>
+    <br />
 
     <button type="submit">Submit</button>
 
