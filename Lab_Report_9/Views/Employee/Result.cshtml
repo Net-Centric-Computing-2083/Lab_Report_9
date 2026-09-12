@@ -1,0 +1,31 @@
+﻿@model Lab_Report_9.Models.Employee
+
+@{
+    ViewData["Title"] = "Employee Details";
+}
+
+<h2>Submitted Employee Information</h2>
+
+<div class="card p-4">
+
+    <p><strong>Employee ID:</strong> @Model.Id</p>
+
+    <p><strong>Name:</strong> @Model.Name</p>
+
+    <p><strong>Email:</strong> @Model.Email</p>
+
+    <p><strong>Age:</strong> @Model.Age</p>
+
+    <p><strong>Contact No:</strong> @Model.ContactNo</p>
+
+    <p><strong>Salary:</strong> @Model.Salary</p>
+
+    <p><strong>Joined Date:</strong> @Model.JoinedDate.ToString("yyyy-MM-dd")</p>
+
+</div>
+
+<br />
+
+<a asp-action="Create" class="btn btn-secondary">
+    Add Another Employee
+</a>
